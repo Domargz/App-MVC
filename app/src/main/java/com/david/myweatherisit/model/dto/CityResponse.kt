@@ -10,58 +10,58 @@ data class CityResponse (
 @Serializable
 data class Data(
     @SerialName("wind_cdir")
-    val windCdir: String?,
-    val rh: Long?,
-    val pod: String?,
-    val lon: Double?,
-    val pres: Double?,
-    val timezone: String?,
+    val windCdir: String? = null,
+    val rh: Double? = null,
+    val pod: String? = null,
+    val lon: Double? = null,
+    val pres: Double? = null,
+    val timezone: String? = null,
     @SerialName("ob_time")
-    val obTime: String?,
+    val obTime: String? = null,
     @SerialName("country_code")
-    val countryCode: String?,
-    val clouds: Long?,
-    val vis: Long?,
+    val countryCode: String? = null,
+    val clouds: Double? = null,
+    val vis: Double? = null,
     @SerialName("wind_spd")
-    val windSpd: Double?,
-    val gust: Double?,
+    val windSpd: Double? = null,
+    val gust: Double? = null,
     @SerialName("wind_cdir_full")
-    val windCdirFull: String?,
+    val windCdirFull: String? = null,
     @SerialName("app_temp")
-    val appTemp: Double?,
+    val appTemp: Double? = null,
     @SerialName("state_code")
-    val stateCode: String?,
-    val ts: Long?,
+    val stateCode: String? = null,
+    val ts: Double? = null,
     @SerialName("h_angle")
-    val hAngle: Long?,
-    val dewpt: Double?,
+    val hAngle: Double? = null,
+    val dewpt: Double? = null,
     val weather: Weather,
-    val uv: Long?,
-    val aqi: Long?,
-    val station: String?,
-    val sources: List<String?>,
+    val uv: Double? = null,
+    val aqi: Double? = null,
+    val station: String? = null ,
+    val sources: List<String>? = null,
     @SerialName("wind_dir")
-    val windDir: Long?,
+    val windDir: Double? = null,
     @SerialName("elev_angle")
-    val elevAngle: Double?,
-    val datetime: String?,
-    val precip: Long?,
-    val ghi: Double?,
-    val dni: Long?,
+    val elevAngle: Double? = null,
+    val datetime: String? = null,
+    val precip: Double? = null,
+    val ghi: Double? = null,
+    val dni: Double? = null,
     @SerialName("solar_rad")
-    val solarRad: Long?,
+    val solarRad: Double? = null,
     @SerialName("city_name")
-    val cityName: String?,
-    val sunrise: String?,
-    val sunset: String?,
-    val temp: Double?,
-    val lat: Double?,
-    val slp: Double?,
+    val cityName: String,
+    val sunrise: String? = null,
+    val sunset: String? = null,
+    val temp: Double? = null,
+    val lat: Double? = null,
+    val slp: Double? = null,
 )
 
 @Serializable
 data class Weather(
-    val icon: String?,
-    val code: Long?,
-    val description: String?,
+    val icon: String? = null,
+    val code: Double? = null,
+    val description: String? = null,
 )
