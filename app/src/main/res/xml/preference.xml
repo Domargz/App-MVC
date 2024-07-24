@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+        <EditTextPreference
+            android:key="City"
+            android:title="Insert your default city"
+            android:summary="%s"
+            android:defaultValue="London"
+            />
+
+        <ListPreference
+            app:key="Temperature"
+            android:title="Select your type of temperature"
+            android:entries="@array/entry_names"
+            android:entryValues="@array/entry_values"
+            android:summary="%s"
+            android:defaultValue="M"
+            />
+
+        <SwitchPreference
+            android:key="Notifications"
+            android:title="Show notifiaction" />
+
+
+
+</androidx.preference.PreferenceScreen>
