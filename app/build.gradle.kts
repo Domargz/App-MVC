@@ -59,6 +59,10 @@ android {
 
 dependencies {
 
+    val appcompat_version = "1.7.0"
+
+    implementation("androidx.appcompat:appcompat:$appcompat_version")
+
     val ktor_version = "2.3.12"
     implementation("io.ktor:ktor-client-core:$ktor_version")
     implementation("io.ktor:ktor-client-android:$ktor_version")
@@ -67,6 +71,10 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 
+
+    implementation("androidx.preference:preference-ktx:1.2.0")
+
+    implementation ("com.google.android.material:material:1.6.8")
 
 
     implementation(libs.material.v168)
