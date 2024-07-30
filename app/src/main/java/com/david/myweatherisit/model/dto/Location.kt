@@ -1,5 +1,8 @@
 package com.david.myweatherisit.model.dto
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Location(
     val country: String,
     val lat: Double,
