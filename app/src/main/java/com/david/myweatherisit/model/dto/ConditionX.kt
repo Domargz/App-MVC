@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ConditionX(
-    val code: Int,
+    //val code: Int,
     val icon: String,
-    val text: String
+    //val text: String
 )
