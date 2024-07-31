@@ -5,4 +5,5 @@
     <color name="blue_start">#FF87CEEB</color>
     <color name="title_app">#D1CFCE</color>
     <color name="selected_item">#FFB0B0B0</color>
+    <color name="list_item">#B8E4FA</color>
 </resources>
